@@ -1,0 +1,10 @@
+{
+    "name": "electron-olamundo",
+    "version": "0.1.0",
+    "main": "main.js",
+    "description": "Um aplicativo simples",
+    "author": "Gabriel",
+    "scripts": {
+      "start": "electron main.js"
+    }
+  }
