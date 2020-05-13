@@ -37,7 +37,7 @@ font = pygame.font.Font('freesansbold.ttf', 18)
 score = 0
 game_over = False
 while not game_over:
-    clock.tick(10)#velociade do jogo
+    clock.tick(4)#velociade do jogo
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             pygame.quit()
