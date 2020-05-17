@@ -6,7 +6,20 @@ from pygame import mixer
 
 score1 = 0
 score2 = 0
+num_players = 2
+
+def start_the_game1():
+    global num_players
+    num_players = 1
+    start_the_game()
+    return
+
 def start_the_game():
+        global num_players
+        if num_players == 1:
+            print(num_players)
+        if num_players == 2:
+            print(num_players)
         def ongrid_random():
             # Criando lugar aleatorio para o poder em um espaço na tela multiplo de 10
             x = random.randint(110, 690)
@@ -442,7 +455,7 @@ def start_the_game():
                 start_the_game()
             elif game_over_player1:
                 game_over_font = pygame.font.Font('freesansbold.ttf', 35)
-                game_over_screen = game_over_font.render('VENCEU', True, (20, 20, 255))
+                game_over_screen = game_over_font.render('JOGADOR AZUL VENCEU', True, (20, 20, 255))
                 score1 = score1 + 1
                 game_over_rect = game_over_screen.get_rect()
                 game_over_rect.midtop = (400, 300)
@@ -454,7 +467,7 @@ def start_the_game():
                 start_the_game()
             elif game_over_player2:
                 game_over_font = pygame.font.Font('freesansbold.ttf', 35)
-                game_over_screen = game_over_font.render('VENCEU', True, (255, 30, 30))
+                game_over_screen = game_over_font.render('JOGADOR VERMELHO VENCEU', True, (255, 30, 30))
                 score2 = score2 + 1
                 game_over_rect = game_over_screen.get_rect()
                 game_over_rect.midtop = (400, 300)
@@ -521,7 +534,7 @@ def menu3():
     engine.set_sound(sound.SOUND_TYPE_CLICK_MOUSE, 'select_002.ogg')
     menu.set_sound(engine, recursive=True)
 
-    menu.add_button('1 Player', start_the_game)
+    menu.add_button('1 Player', start_the_game1)
     menu.add_button("2 Players", start_the_game)
 
     menu.mainloop(surface)
@@ -536,13 +549,13 @@ def menu4():
     engine.set_sound(sound.SOUND_TYPE_CLICK_MOUSE, 'select_002.ogg')
     menu.set_sound(engine, recursive=True)
 
-    regras= "O jogo é formado por duas pessoas que controlam os Trons,"\
-            "usando as setinhas do teclado um jogador se move e o outro jogador"\
+    regras= "O jogo é formado por duas pessoas que controlam os Trons, "\
+            "usando as setinhas do teclado um jogador se move e o outro jogador "\
             "para se mover irá utilizar o famoso WASD."\
-            "Durante a partida alguns poderes irão aparecer, deixando cada vez mais"\
-            "o jogo dinâmico e competitivo."\
-            "Vença o seu adversário não encostando e nem esbarrando em nada e tente"\
-            "pegar poderes para que você consiga ter certas vantagens."\
+            "Durante a partida alguns poderes irão aparecer, deixando cada vez mais "\
+            "o jogo dinâmico e competitivo. "\
+            "Vença o seu adversário não encostando e nem esbarrando em nada e tente "\
+            "pegar poderes para que você consiga ter certas vantagens. "\
             "Boa Sorte!!"
 
     font = pygame_menu.font.FONT_HELVETICA
