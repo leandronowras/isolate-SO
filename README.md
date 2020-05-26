@@ -4,7 +4,7 @@
 Jogo voltado a descontrair durante o periodo de quarentena
 
 <h2>Como instalar?</h2>
-Instale a pasta do jogo em https://drive.google.com/open?id=1DVMM1KMP9RXmTNoSHecPrLdX0kRSCb9x e depois clique em build, apos esses passos o instalador ira guiar o usuario para finalizar a instalacao
+Instale a pasta do jogo em https://bityli.com/ovDVN e depois clique em build, apos esses passos o instalador ira guiar o usuario para finalizar a instalacao
 
 <h2>Links externos</h2>
 Site de noticias sobre a covid-19 http://covidnews.educatux.com.br/
