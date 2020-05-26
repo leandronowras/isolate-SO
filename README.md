@@ -10,6 +10,8 @@ Descompacte o exe.win, acesse-o e clique no aplicativo Tron
 Site de noticias sobre a covid-19 http://covidnews.educatux.com.br/
 
 <h2>Participantes</h2>
-Gabriel Moreschi Queiroz Mariano
-Leandro da Costa de Abreu
-Luca Mozart Araujo Almeida
+<ul>
+<li>Gabriel Moreschi Queiroz Mariano</li>
+<li>Leandro da Costa de Abreu</li>
+<li>Luca Mozart Araujo Almeida</li>
+</ul>
