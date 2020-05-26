@@ -544,7 +544,7 @@ def menu1():
 
     menu.set_sound(engine, recursive=True)
 
-    menu.add_button('Start', menu2)
+    menu.add_button('Começar', menu2)
 
     menu.mainloop(surface)
 
@@ -561,9 +561,9 @@ def menu2():
     menu.set_sound(engine, recursive=True)
 
 
-    menu.add_button('Play', menu3)
-    menu.add_button('Obout', menu4)
-    menu.add_button('Quit', pygame_menu.events.EXIT)
+    menu.add_button('Jogar', menu3)
+    menu.add_button('Sobre', menu4)
+    menu.add_button('Sair', pygame_menu.events.EXIT)
 
     menu.mainloop(surface)
 
@@ -572,16 +572,16 @@ def menu3():
     pygame.init()
 
     surface = pygame.display.set_mode((700, 700))
-    menu = pygame_menu.Menu(400, 600, 'Players',
+    menu = pygame_menu.Menu(400, 600, 'Jogadores',
                             theme=pygame_menu.themes.THEME_DARK)
 
     engine = sound.Sound()
     engine.set_sound(sound.SOUND_TYPE_CLICK_MOUSE, 'select_002.ogg')
     menu.set_sound(engine, recursive=True)
 
-    menu.add_button('1 Player', player1)
-    menu.add_button("2 Players", player2)
-    menu.add_button('Back', menu2)
+    menu.add_button('1 Jogador', player1)
+    menu.add_button("2 Jogadores", player2)
+    menu.add_button('Voltar', menu2)
 
     menu.mainloop(surface)
 
@@ -589,7 +589,7 @@ def menu4():
     pygame.init()
 
     surface = pygame.display.set_mode((700, 700))
-    menu = pygame_menu.Menu(400, 600, 'Rules',
+    menu = pygame_menu.Menu(400, 600, 'Regras',
                             theme=pygame_menu.themes.THEME_DARK)
     engine = sound.Sound()
     engine.set_sound(sound.SOUND_TYPE_CLICK_MOUSE, 'select_002.ogg')
@@ -608,8 +608,8 @@ def menu4():
 
     menu.add_label(regras, max_char=-1,font_size=20, font_name=font)
 
-    menu.add_button("Power",menu5)
-    menu.add_button('Back', menu2)
+    menu.add_button("Poder",menu5)
+    menu.add_button('Voltar', menu2)
 
     menu.mainloop(surface)
 
@@ -617,15 +617,15 @@ def player1():
     pygame.init()
 
     surface = pygame.display.set_mode((700, 700))
-    menu = pygame_menu.Menu(400, 600, 'Player 1',
+    menu = pygame_menu.Menu(400, 600, 'Jogador 1',
                             theme=pygame_menu.themes.THEME_DARK)
     engine = sound.Sound()
     engine.set_sound(sound.SOUND_TYPE_CLICK_MOUSE, 'select_002.ogg')
     menu.set_sound(engine, recursive=True)
 
     menu.add_image('tron.png', angle=0, scale=(1, 1))
-    menu.add_button("GO", start_the_game1)
-    menu.add_button('Back', menu3)
+    menu.add_button("Vamos", start_the_game1)
+    menu.add_button('Voltar', menu3)
 
     menu.mainloop(surface)
 
@@ -633,7 +633,7 @@ def player2():
     pygame.init()
 
     surface = pygame.display.set_mode((700, 800))
-    menu = pygame_menu.Menu(500, 700, 'Players 2',
+    menu = pygame_menu.Menu(500, 700, 'Jogador 2',
                             theme=pygame_menu.themes.THEME_DARK)
     engine = sound.Sound()
     engine.set_sound(sound.SOUND_TYPE_CLICK_MOUSE, 'select_002.ogg')
@@ -641,8 +641,8 @@ def player2():
 
     menu.add_image('tron.png', angle=0, scale=(0.7, 0.7))
     menu.add_image('tron.png', angle=0, scale=(0.7, 0.7))
-    menu.add_button("GO", start_the_game)
-    menu.add_button('Back', menu3)
+    menu.add_button("Vamos", start_the_game)
+    menu.add_button('Voltar', menu3)
 
     menu.mainloop(surface)
 
@@ -650,7 +650,7 @@ def menu5():
     pygame.init()
 
     surface = pygame.display.set_mode((700, 800))
-    menu = pygame_menu.Menu(500, 700, 'Power',
+    menu = pygame_menu.Menu(500, 700, 'Poder',
                             theme=pygame_menu.themes.THEME_DARK)
     engine = sound.Sound()
     engine.set_sound(sound.SOUND_TYPE_CLICK_MOUSE, 'select_002.ogg')
@@ -676,7 +676,7 @@ def menu5():
 
     menu.add_label(text3, max_char=-1,font_size=20, font_name=font)
 
-    menu.add_button('Back', menu2)
+    menu.add_button('Voltar', menu2)
 
     menu.mainloop(surface)
 
